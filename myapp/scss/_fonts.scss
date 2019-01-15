@@ -1,0 +1,10 @@
+@import "_mixins/font-face";
+
+@include font-face("AlexandraZeferinoOne", "../fonts/AlexandraZeferinoOne/AlexandraZeferinoOne", 400);
+@include font-face("MuseoCyrl", "../fonts/MuseoCyrl-500/MuseoCyrl-500", 500);
+@include font-face("Lato", "../fonts/Lato-Regular/Lato-Regular", 400);
+
+// @include font-face("Lato-Black", "../fonts/Lato-Black/Lato-Black", 800);
+// @include font-face("Lato-Medium", "../fonts/Lato-Medium/Lato-Medium", 500);
+// @include font-face("Gilroy-ExtraBold", "../fonts/Gilroy-ExtraBold/Gilroy-ExtraBold", 800);
+// @include font-face("Gilroy-Light", "../fonts/Gilroy-Light/Gilroy-Light", 100);
