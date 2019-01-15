@@ -6,14 +6,45 @@
 @media only screen and (max-width: 1240px) {
   
 }
-@media only screen and (max-width: 980px) {
-  
+@media only screen and (max-width: 1023px) {
+    header {
+        height: auto;
+        min-height: auto;
+        padding: 0;
+    }
+    .overlay {
+        position: static;
+        padding: 3%;
+    }
+    .header__title {
+        font-size: 53px;
+        line-height: 1;
+    }
+    .menu-wrap {
+        padding: 0;
+    }
 }
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 980px) {
+    .title {
+        font-size: 33px;
+        letter-spacing: 10px;
+    }
+    .footer__logo {
+        max-width: 150px;
+        margin: 0 auto;
+        img {
+            width: 100%;
+        }
+    }
+}
+@media only screen and (max-width: 850px) {
     .toggle-menu {
         display: block;
     }
     .main-menu {
+        a {
+            color: #0b0b0b;
+        }
         display: none;
         &.active {
             display: block;
@@ -62,13 +93,58 @@
         padding-right: 25px;
     }
 
+
 }
-@media only screen and (max-width: 500px) {
-   
+@media only screen and (max-width: 719px) {
+    .header__title {
+        font-size: 36px;
+    }
+    .header__subtitle {
+        font-size: 64px;
+    }
+    .overlay {
+        padding-bottom: 40px;
+    }
+    .whywe__item {
+        font-size: 12px;
+    }
+    .footer .wrap {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .footer__left, .footer__tel {
+        width: 50%;
+    }
+    .social {
+        margin-top: 20px;
+        width: 100%;
+        text-align: center;
+    }
 }
 
-@media only screen and (max-width: 413px) {
-  
+@media only screen and (max-width: 479px) {
+    .whywe__items {
+        flex-direction: column;
+    }
+    .whywe__item {
+        width: 100%;
+        padding: 5%;
+    }
+    .whywe__item.middle {
+        border: none;
+        border-top: 2px solid #000;
+        border-bottom: 2px solid #000;
+    }
+    .footer__tel {
+        margin: 20px 0;
+    }
+    .footer__left {
+         order: 1;
+         margin: 20px 0;
+    }
+    .footer__left, .footer__tel {
+        width: 100%;
+    }
 }
 @media only screen and (max-width: 320px) {
 

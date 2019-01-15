@@ -1,5 +1,5 @@
 .footer {
-    padding: 159px 50px 59px;
+    padding: 3%;
     background-color: #2a2a2a;
     color: #ffffff;
     .wrap {
@@ -7,44 +7,32 @@
         justify-content: space-between;
         align-items: center;
     }
-    &__logo {
-        font-size: 25px;
-        // font-family: $title-font;
-        letter-spacing: 8px;
-        text-transform: uppercase;
-    }
-    &__menu {
-        font-size: 12px;
-        text-transform: uppercase;
-        ul {
-            display: flex;
-            justify-content: center;
-            white-space: nowrap;
-    
-        }
+    &__tel {
         a {
-            display: block;
-            padding: 20px;
+            color: #fff;
+            &:hover {
+                color: #fdac5c;
+            }
         }
     }
 }
+
 .rights {
     font-size: 14px;
     font-weight: 300;
     line-height: 1.21;
     color: #646464;
+    padding-top: 20px;
 }
 .social {
-    display: flex;
-    &__item {
-        display: block;
-        padding: 20px 33px;
-        &:hover svg {
+    svg {
+        width: 40px;
+        height: 40px;
+        padding: 5px;
+        margin: 5px;
+        fill: #fff;
+        &:hover {
             fill: #fdac5c;
         }
     }
-    svg {
-        fill: #000;
-    }
-
 }

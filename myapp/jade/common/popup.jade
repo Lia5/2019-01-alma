@@ -1,0 +1,36 @@
+//- #form.form
+//- 	.form__title.title Форма обратной связи
+//- 	#messegeResult
+//- 		p  Задайте нам вопрос и мы свяжемся с вами 
+//- 	.form__wrapper
+//- 		form
+//- 			// Hidden Required Fields
+//- 			input(type='hidden', name='project_name', value='Alma')
+//- 			input(type='hidden', name='admin_email', value='liaforweb@gmail.com')
+//- 			input(type='hidden', name='form_subject', value='Alma-вопрос')
+//- 			// END Hidden Required Fields
+//- 			input(type='text', name='Имя', placeholder='Введите ваше имя', required='')
+//- 			br
+//- 			input(type='text', name='E-mail', placeholder='Введите ваш email', required='')
+//- 			br
+//- 			input.phone-mask(type='text', name='Телефон', placeholder='Введите ваш телефон')
+//- 			br
+//- 			textarea#address(name='address', rows='10', placeholder='Ваше сообщение', required='')
+//- 			button.btn Отправить
+#sendform.sendform.disabled
+    .sendform__wrap.animated.bounceOutUp
+        #sendform-close.popup-close.cross
+            span.cross-line.cross--topper
+            span.cross-line.cross--bottom
+        h3
+            | Оставьте заявку,
+            br
+            |  и мы вам перезвоним
+        form(action='mail.php', method='post')
+            label
+                span Имя
+                input(type='text', name='name', required='')
+            label
+                span Телефон
+                input.phone-mask(type='text', name='phone', required='')
+            input.btn(type='submit', value='Отправить')

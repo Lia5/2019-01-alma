@@ -4,6 +4,7 @@ header {
     display: flex;
     flex-direction: column;
     height: 100vh;
+    min-height: 766px;
     background: #8f8d8d url(../img/header-bg.jpg) center center no-repeat;
     background-size: cover;
 }
@@ -21,7 +22,7 @@ header {
     // font-family: $title-font;
     font-size: 10px;
     text-transform: uppercase;
-    color: $text;
+    color: #fff;
     letter-spacing: 4px;
     padding-top: 40px;
 }
@@ -42,9 +43,6 @@ header {
 .toggle-menu {
     display: none;
 }
-.cross {
-    display: none;
-}
 .main-menu {
     
     ul {
@@ -54,6 +52,9 @@ header {
         color: #fff;
         display: block;
         padding: 20px 30px;
+        &:hover {
+            color: #fdac5c;
+        }
     }
 
 }

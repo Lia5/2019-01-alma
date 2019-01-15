@@ -1,0 +1,91 @@
+.disabled {
+    display: none !important;
+}
+.sendform {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 100;
+    background-color: rgba(33, 33, 33, 0.8);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.popup-close {
+    width: 17px;
+    height: 17px;
+}
+.cross-line {
+    display: block;
+    position: relative;
+    width: 22px;
+    height: 2px;
+    background: #000;
+    border: none;
+}
+.cross--topper {
+    top: 11px;
+    transform: rotate(-45deg);
+}
+.cross--bottom {
+    top: 8px;
+    transform: rotate(45deg);
+}
+
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+.bounceInDown {
+    animation-name: bounceInDown;
+}
+@-webkit-keyframes bounceInDown{0%,60%,75%,90%,to{-webkit-animation-timing-function:cubic-bezier(.215,.61,.355,1);animation-timing-function:cubic-bezier(.215,.61,.355,1)}0%{-webkit-transform:translate3d(0,-3000px,0);opacity:0;transform:translate3d(0,-3000px,0)}60%{-webkit-transform:translate3d(0,25px,0);opacity:1;transform:translate3d(0,25px,0)}75%{-webkit-transform:translate3d(0,-10px,0);transform:translate3d(0,-10px,0)}90%{-webkit-transform:translate3d(0,5px,0);transform:translate3d(0,5px,0)}to{-webkit-transform:translateZ(0);transform:translateZ(0)}}
+@keyframes bounceInDown{0%,60%,75%,90%,to{-webkit-animation-timing-function:cubic-bezier(.215,.61,.355,1);animation-timing-function:cubic-bezier(.215,.61,.355,1)}0%{-webkit-transform:translate3d(0,-3000px,0);opacity:0;transform:translate3d(0,-3000px,0)}60%{-webkit-transform:translate3d(0,25px,0);opacity:1;transform:translate3d(0,25px,0)}75%{-webkit-transform:translate3d(0,-10px,0);transform:translate3d(0,-10px,0)}90%{-webkit-transform:translate3d(0,5px,0);transform:translate3d(0,5px,0)}to{-webkit-transform:translateZ(0);transform:translateZ(0)}}
+.bounceInDown{-webkit-animation-name:bounceInDown;animation-name:bounceInDown}
+
+.bounceOutUp {
+    animation-name: bounceOutUp;
+}
+
+@-webkit-keyframes bounceOutUp{20%{-webkit-transform:translate3d(0,-10px,0);transform:translate3d(0,-10px,0)}40%,45%{-webkit-transform:translate3d(0,20px,0);opacity:1;transform:translate3d(0,20px,0)}to{-webkit-transform:translate3d(0,-2000px,0);opacity:0;transform:translate3d(0,-2000px,0)}}
+@keyframes bounceOutUp{20%{-webkit-transform:translate3d(0,-10px,0);transform:translate3d(0,-10px,0)}40%,45%{-webkit-transform:translate3d(0,20px,0);opacity:1;transform:translate3d(0,20px,0)}to{-webkit-transform:translate3d(0,-2000px,0);opacity:0;transform:translate3d(0,-2000px,0)}}.bounceOutUp{-webkit-animation-name:bounceOutUp;animation-name:bounceOutUp}
+
+.sendform__wrap {
+    background-color: #ffffff;
+    padding: 45px 54px 50px;
+    max-width: 320px;
+    position: relative;
+    border-radius: 5px;
+}
+.sendform__wrap #sendform-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+.sendform__wrap form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.sendform__wrap form label {
+    margin-bottom: 45px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.sendform__wrap form label span {
+    font-size: 12px;
+    color: rgba(84, 92, 130, 0.7);
+}
+.sendform__wrap input[type="text"] {
+    border: none;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.15);
+    border-radius: 0;
+    padding-left: 0;
+    transition: all 0.5s;
+    padding: 11px 20px;
+}

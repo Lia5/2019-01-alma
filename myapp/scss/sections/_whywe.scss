@@ -1,0 +1,28 @@
+.whywe {
+    background: #ffffff url(../img/bg-whywe.jpg) no-repeat center center;
+    background-size: cover;
+    color: #000000;
+    padding: 3%;
+    svg {
+        width: 100px;
+        height: 100px;
+    }
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 40px;
+    }
+    &__item {
+        width: 33%;
+        padding: 2%;
+        text-align: center;
+        &.middle {
+            border-left: 2px solid #000000;
+            border-right: 2px solid #000000;
+        }
+    }
+    &__btn {
+        margin: 40px 20px;
+        text-align: center;
+    }
+}

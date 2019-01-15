@@ -1,6 +1,11 @@
 $(function() {
 
-	// Custom JS
+    //select-number form
+    if(jQuery('.phone-mask').length) {
+        jQuery(function($){
+        $(".phone-mask").mask("+38(999) 999-9999");
+    });
+    } 
 
 });
 
@@ -20,34 +25,36 @@ document.addEventListener('DOMContentLoaded', function(){
         nav.classList.toggle('active');
 
     });
-//tabs
-	// store tabs variable
-	var myTabs = document.querySelectorAll("ul.header__tabs > li");
-    function myTabClicks(tabClickEvent) {
-		for (var i = 0; i < myTabs.length; i++) {
-			myTabs[i].classList.remove("active");
-		}
-		var clickedTab = tabClickEvent.currentTarget;
-		clickedTab.classList.add("active");
-		tabClickEvent.preventDefault();
-		var myContentPanes = document.querySelectorAll(".tab-pane");
-		for (i = 0; i < myContentPanes.length; i++) {
-			myContentPanes[i].classList.remove("active");
-		}
-        var anchorReference = tabClickEvent.target;
-        console.log(anchorReference);
-        var activePaneId = anchorReference.getAttribute("href");
-        console.log(activePaneId);
-        var activePane = document.querySelector(activePaneId);
-        console.log(activePaneId);
-		activePane.classList.add("active");
-    }
-    for (i = 0; i < myTabs.length; i++) {
-		myTabs[i].addEventListener("click", myTabClicks)
-	}
 
+});
 
+let sendform = document.querySelector('#sendform'),
+    sendformWrap = document.querySelector('.sendform__wrap'),
+    sendformClose = document.querySelector('#sendform-close');
 
+function sfOpen() {
+    sendformWrap.classList.remove('bounceOutUp');
+    sendformWrap.classList.add('bounceInDown');
+    sendform.classList.remove('disabled');
+    sendform.classList.add('flex');
+}
 
+function sfCLose() {
+    sendformWrap.classList.remove('bounceInDown');
+    sendformWrap.classList.add('bounceOutUp');
+    setTimeout("sendform.classList.add('disabled')", 700);
+    setTimeout("sendform.classList.remove('flex')", 800);
+}
 
+window.addEventListener("DOMContentLoaded", function () {
+
+    sendform.addEventListener('click', e => {
+        if (e.target !== sendformWrap && e.target == sendform) {
+            sfCLose();
+        }
+    });
+
+    sendformClose.addEventListener('click', () => {
+        sfCLose();
+    });
 });
