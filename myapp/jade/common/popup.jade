@@ -17,6 +17,7 @@
 //- 			br
 //- 			textarea#address(name='address', rows='10', placeholder='Ваше сообщение', required='')
 //- 			button.btn Отправить
+//- form(action='mail.php', method='post')
 #sendform.sendform.disabled
     .sendform__wrap.animated.bounceOutUp
         #sendform-close.popup-close.cross
@@ -26,7 +27,12 @@
             | Оставьте заявку,
             br
             |  и мы вам перезвоним
-        form(action='mail.php', method='post')
+        form
+            // Hidden Required Fields
+			input(type='hidden', name='project_name', value='Alma')
+			input(type='hidden', name='admin_email', value='liaforweb@gmail.com')
+			input(type='hidden', name='form_subject', value='Alma-вопрос')
+            // END Hidden Required Fields
             label
                 span Имя
                 input(type='text', name='name', required='')

@@ -126,6 +126,9 @@
 }
 
 @media only screen and (max-width: 479px) {
+    .btn {
+        letter-spacing: 1px;
+    }
     .whywe__items {
         flex-direction: column;
     }
