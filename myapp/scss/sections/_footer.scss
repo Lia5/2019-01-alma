@@ -19,6 +19,10 @@
             color: #fff;
             &:hover {
                 color: #fdac5c;
+                svg {
+                    transition: 0.3s;
+                    fill: #fdac5c;
+                }
             }
         }
     }
