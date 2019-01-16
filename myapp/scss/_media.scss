@@ -29,12 +29,15 @@
         font-size: 33px;
         letter-spacing: 10px;
     }
-    .footer__logo {
+    .logo {
         max-width: 150px;
-        margin: 0 auto;
+       
         img {
             width: 100%;
         }
+    }
+    .footer__logo {
+        margin: 0 auto;
     }
 }
 @media only screen and (max-width: 850px) {

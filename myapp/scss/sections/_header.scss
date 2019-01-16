@@ -44,7 +44,9 @@ header {
     display: none;
 }
 .main-menu {
-    
+    .cross {
+        display: none;
+    }
     ul {
         display: flex;
     }
