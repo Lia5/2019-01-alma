@@ -95,7 +95,13 @@
         padding-left: 25px;
         padding-right: 25px;
     }
-
+    .footer__left {
+        width: 30%;
+    }
+    .footer__right {
+        width: 70%;
+        text-align: center;
+    }
 
 }
 @media only screen and (max-width: 719px) {
@@ -115,7 +121,10 @@
         flex-wrap: wrap;
         justify-content: space-between;
     }
-    .footer__left, .footer__tel {
+    .footer__left {
+        width: 50%;
+    }
+    .footer__right {
         width: 50%;
     }
     .social {
@@ -148,7 +157,7 @@
          order: 1;
          margin: 20px 0;
     }
-    .footer__left, .footer__tel {
+    .footer__left, .footer__right {
         width: 100%;
     }
 }

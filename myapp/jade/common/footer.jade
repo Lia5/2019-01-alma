@@ -4,13 +4,18 @@ footer.footer#footer
             .logo.footer__logo 
                 img(src="img/logo.png", alt="alma")
             .rights © 2019 ALma, All rights reserved
-        .footer__tel
-            .tel Больше информации по телефонам 
-            a(href="tel:+380937424277") ‎093-742-42-77, 
-            a(href="tel:+380632433584") ‎063-243-35-84
-        .social
-            .social__text Мы в соцсетях
-            .social__icon
+        .footer__right
+            .footer__text Больше информации:
+            .footer__tel
+                a(href="tel:+380937424277")
+                    svg.phone
+                        use(xlink:href='img/icons/phone.svg#phone')
+                    | 093-742-42-77
+                a(href="tel:+380632433584")
+                    svg.phone
+                        use(xlink:href='img/icons/phone.svg#phone')
+                    | ‎063-243-35-84
+            .social
                 a.social__item(href="https://www.facebook.com/DanceStudioAlmaNikolaev/", target="_blank") 
                     svg.facebook
                         use(xlink:href='img/icons/facebook.svg#facebook')
