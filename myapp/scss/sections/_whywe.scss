@@ -20,6 +20,13 @@
             border-left: 2px solid #000000;
             border-right: 2px solid #000000;
         }
+        &:hover {
+            svg {
+                transition: 0.3s;
+                fill: #fdac5c;
+                transform: scale(1.15);
+            }
+        }
     }
     &__btn {
         margin: 40px 20px;
