@@ -24,6 +24,11 @@ $(function() {
 		return false;
     });
     
+        //BEGIN copyright
+        var copyYear = new Date();
+        document.getElementById('copy').innerHTML = copyYear.getFullYear()
+        //END copyright
+        
 });
 
 
