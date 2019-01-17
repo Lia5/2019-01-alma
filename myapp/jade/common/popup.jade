@@ -39,4 +39,7 @@
             label
                 span Телефон
                 input.phone-mask(type='text', name='phone', required='')
+            .agree-line
+                input#agree(type='checkbox', checked='', disabled='')
+                label(for='agree') Я даю согласие на обработку моих персональных данных
             input.btn(type='submit', value='Отправить')

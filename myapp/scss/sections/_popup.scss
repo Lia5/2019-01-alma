@@ -89,3 +89,12 @@
     transition: all 0.5s;
     padding: 11px 20px;
 }
+.sendform__wrap {
+    .agree-line {
+        margin-bottom: 5px;
+        font-size: 10px;
+        label {
+            display: inline;
+        }
+    }
+}
